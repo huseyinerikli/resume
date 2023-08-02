@@ -7,36 +7,74 @@
    </head>
    <body style= "background-color: rgb(201, 221, 215);">
 
-
+   <!-- Navbar -->
    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <!-- Container wrapper -->
        <div class="container-fluid">
-           <a class="navbar-brand" href="#">Navbar</a>
-           <button class="navbar-toggler"
+           <!-- Navbar brand -->
+           <a class="navbar-brand" href="#">Brand</a>
+
+           <!-- Toggle button -->
+           <button
+                   class="navbar-toggler"
                    type="button"
-                   (click)="basicNav.toggle()"
+                   (click)="basicNavbar.toggle()"
                    aria-expanded="false"
-                   aria-label="Toggle navigation"   >
+                   aria-label="Toggle navigation"
+           >
                <i class="fas fa-bars"></i>
            </button>
+
+           <!-- Collapsible wrapper -->
            <div
                    class="collapse navbar-collapse"
-                   id="navbarNav"
+                   id="navbarSupportedContent"
                    mdbCollapse
-                   #basicNav="mdbCollapse"
+                   #basicNavbar="mdbCollapse"
            >
-               <ul class="navbar-nav">
+               <!-- Left links -->
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                    <li class="nav-item">
                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                       <br>
-                       <a href="hobbies.html">My Hobbies</a>
-                       <br>
-                       <a href="contact-me.html">Contact Me</a>
                    </li>
-
+                   <li class="nav-item">
+                       <a class="nav-link" href="#">Link</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
+                       >Disabled</a
+                       >
+                   </li>
                </ul>
+               <!-- Left links -->
+
+               <!-- Search form -->
+               <form class="d-flex input-group w-auto">
+                   <input
+                           type="search"
+                           class="form-control"
+                           placeholder="Type query"
+                           aria-label="Search"
+                   />
+                   <button class="btn btn-outline-primary" type="button">
+                       Search
+                   </button>
+               </form>
            </div>
+           <!-- Collapsible wrapper -->
        </div>
+       <!-- Container wrapper -->
    </nav>
+   <!-- Navbar -->
+
+
+
+<!--   <a class="nav-link active" aria-current="page" href="#">Home</a>-->
+<!--   <br>-->
+<!--   <a href="hobbies.html">My Hobbies</a>-->
+<!--   <br>-->
+<!--   <a href="contact-me.html">Contact Me</a>-->
+
 
 
        <table cellspacing ="25">
