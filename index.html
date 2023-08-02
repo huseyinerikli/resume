@@ -5,10 +5,40 @@
     
     <title>☀ Huseyin's Personal Site</title>
    </head>
-  
-
-   
    <body style= "background-color: rgb(201, 221, 215);">
+
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <div class="container-fluid">
+           <a class="navbar-brand" href="#">Navbar</a>
+           <button class="navbar-toggler"
+                   type="button"
+                   (click)="basicNav.toggle()"
+                   aria-expanded="false"
+                   aria-label="Toggle navigation"   >
+               <i class="fas fa-bars"></i>
+           </button>
+           <div
+                   class="collapse navbar-collapse"
+                   id="navbarNav"
+                   mdbCollapse
+                   #basicNav="mdbCollapse"
+           >
+               <ul class="navbar-nav">
+                   <li class="nav-item">
+                       <a class="nav-link active" aria-current="page" href="#">Home</a>
+                       <br>
+                       <a href="hobbies.html">My Hobbies</a>
+                       <br>
+                       <a href="contact-me.html">Contact Me</a>
+                   </li>
+
+               </ul>
+           </div>
+       </div>
+   </nav>
+
+
        <table cellspacing ="25">
            <tr>
                <td> <img src="images/huseyinPic.png" alt="Huseyin's profile picture">
@@ -20,7 +50,7 @@
                     the software development life cycle. Skilled in implementing technologies such as Java,
                     Spring Boot, Angular, Node, JavaScript, TypeScript, MS SQL.
                     <br> I 💖 coffee and chocolate.</p>
-                <p>This is <a href="https://huseyinerikli.github.io/resume/">
+                <p>This is <a href="https://www.youtube.com/watch?v=HnH9Kai3hBc&list=PLgT8mqD_dCRsZxQIHK8RUVATwlkV9isvd&index=6&t=29s ">
                     my website</a></p>
               </td>
            </tr>
@@ -87,9 +117,9 @@
 
     </table>
     <hr> 
-<!--     <a href="hobbies.html">My Hobbies</a>
-    <br>
-    <br>
-    <a href="contact-me.html">Contact Me</a> -->
+<!--    <a href="hobbies.html">My Hobbies</a>-->
+<!--    <br>-->
+<!--    <br>-->
+<!--    <a href="contact-me.html">Contact Me</a>-->
    </body>
 </html>
