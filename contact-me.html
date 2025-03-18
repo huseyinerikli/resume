@@ -3,107 +3,106 @@
 
 <head>
     <meta charset="UTF-8">
-
-    <title>Contact Me</title>
-    
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact Huseyin Erikli - Software Engineer">
+    <title>Contact Me - Huseyin Erikli</title>
+    
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body style= "background-color: rgb(201, 221, 215); 
-margin-left: 20px;
-margin-top: 20px;
-margin-right: 50px;
-
-">
-
-   <!-- Navbar -->
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <!-- Container wrapper -->
-    <div class="container-fluid">
-        <!-- Navbar brand -->
-        <a class="navbar-brand" href="index.html">Huseyin's Personal Website</a>
-       
-        <!-- Toggle button -->
-        <button
-                class="navbar-toggler"
-                type="button"
-                (click)="basicNavbar.toggle()"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-        >
-            <i class="fas fa-bars"></i>
-        </button>
-
-        <!-- Collapsible wrapper -->
-        <div
-                class="collapse navbar-collapse"
-                id="navbarSupportedContent"
-                mdbCollapse
-                #basicNavbar="mdbCollapse"
-        >
-            <!-- Left links -->
-            <ul class="nav justify-content-end"  style= "text-align: center;" >
-                <li class="nav-item" >
-                    <a class="nav-link active" aria-current="page"
-                       href="index.html">Home</a>
-
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="hobbies.html">My Hobbies</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact-me.html">Contact Me</a>
-                </li>
-            </ul>
-            <!-- Left links -->
-
-            <!-- Search form -->
-            <form class="d-flex input-group w-auto"   >
-                <input
-                        type="search"
-                        class="form-control"
-                        placeholder="Type query"
-                        aria-label="Search"
-
-                />
-                <button class="btn btn-outline-primary" type="button"> Search </button>
-            </form>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-code"></i> Huseyin Erikli
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hobbies.html">Hobbies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact-me.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <!-- Collapsible wrapper -->
+    </nav>
+
+    <div class="container">
+        <div class="profile-section">
+            <h1 class="section-title">Contact Me</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p><i class="fas fa-envelope"></i> Email: your.email@example.com</p>
+                        <p><i class="fas fa-phone"></i> Phone: +1 (XXX) XXX-XXXX</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Location: Atlanta, GA, USA</p>
+                        
+                        <div class="social-links mt-4">
+                            <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="btn btn-primary mr-2">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                            <a href="https://github.com/your-username" target="_blank" class="btn btn-dark">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" class="form-control" id="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- Container wrapper -->
-</nav>
-<!-- Navbar -->
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Huseyin Erikli. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
 
-<br>
-<img src="images/huseyinPic.png" alt="Huseyin's profile picture">
-<br>
-
-    <h1>My Contact Info:</h1>
-    <p>Atlanta, GA, USA</p>
-    <p>+1-404-5192856</p>
-    <p>herikli33@gmail.com</p>
-    <hr>
-    <form class="" action="mailto:herikli33@gmail.com" method="post" enctype="text/plain">
-        <br>
-        <label> Your Name:</label>
-        <input type="text" name="yourName" value=""><br>
-        <br>
-        <label> Your Email:</label>
-        <input type="email" name="yourEmail" value=""><br>
-        <br>
-        <label> Your Message:</label><br>
-        <textarea name="yourMessage" cols="80" rows="10"></textarea>
-        <br><br>
-        <input type="submit" name="">
-    </form>
-
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

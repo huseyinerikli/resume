@@ -1,0 +1,200 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --background-color: #f5f6fa;
+    --text-color: #2c3e50;
+    --accent-color: #e74c3c;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: var(--primary-color) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand, .nav-link {
+    color: white !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+.profile-section {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.profile-image {
+    border-radius: 50%;
+    max-width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.section-title {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.skills-table td {
+    padding: 0.5rem 1rem;
+}
+
+.skills-table .stars {
+    color: var(--accent-color);
+}
+
+.experience-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.experience-table th, .experience-table td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.experience-table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.experience-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .profile-section {
+        padding: 1rem;
+    }
+    
+    .experience-table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+.hobby-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.hobby-card:hover {
+    transform: translateY(-5px);
+}
+
+.hobby-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.contact-info {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+}
+
+.contact-info i {
+    margin-right: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.contact-form {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.contact-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.contact-form .form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0.75rem;
+}
+
+.contact-form .form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.btn-dark {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-dark:hover {
+    background-color: #243342;
+    border-color: #243342;
+}
+
+@media (max-width: 768px) {
+    .contact-info, .contact-form {
+        margin-bottom: 2rem;
+    }
+} 
